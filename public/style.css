@@ -1,0 +1,64 @@
+.title{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+
+    background: linear-gradient(270deg,#00ffcc, #0072ff, #00ffcc);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: gradientMove 4s ease infinite;
+}
+.title span{
+    color:#00ffcc;
+}
+@keyframes gradientMove{
+    0%{background-position: 0% 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0% 50%;}
+}
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+
+    background-image: url("ca.jpg");
+    background-size: cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.calculator {
+    width: 700px;
+    padding: 50px;
+    text-align: center;
+    border-radius: 100px;
+
+    background: rgba(255,255,255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    box-shadow: 0 8px 32px rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255,255,255, 0.3);
+
+}
+
+input, select, button {
+    width: 100%;
+    margin: 8px 0;
+    padding: 8px;
+
+}
+#result{
+    color: #efeee6;
+    font-size: 22px;
+    margin-top: 15px;
+    text-align: center;
+
+}
